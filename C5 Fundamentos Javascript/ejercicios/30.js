@@ -2,6 +2,7 @@ function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
    // Tu código:
+   return 'El perimetro del cuadrado es: ' + (lado * 4 );
 }
 
-module.exports = retornarPerimetro;
+module.exports = retornarPerimetro(12);

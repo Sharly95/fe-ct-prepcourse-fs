@@ -5,4 +5,8 @@ function esTipoDato(valor) {
   // Tu código:
 }
 
-module.exports = esTipoDato;
+function esTipoDato(valor){
+  return valor;
+}
+
+module.exports = esTipoDato("Caviar");

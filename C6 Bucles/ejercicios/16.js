@@ -5,6 +5,21 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!".
   // Si "idioma" no es ninguno de los anteriores o es `undefined`, devuelve "Hola!".
   // Tu código:
+  
+
+
+  if(idioma != 'aleman' && idioma != 'mandarin' && idioma != 'ingles' || idioma == 'undefined'){
+    return "Hola!";
+  }
+  var minIdioma = idioma.toLowerCase();
+
+  if(minIdioma == "aleman"){
+    return 'Guten Tag!';
+  }else if(minIdioma == "mandarin"){
+    return 'Ni Hao!';
+  }else if(minIdioma == 'ingles'){
+    return 'Hello!';
+  }
 }
 
 module.exports = saludo;

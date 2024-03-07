@@ -10,7 +10,7 @@ function esPalindromo(string) {
    // Normalizar el texto para eliminar acentos
     texto = texto.normalize("NFD").replace(/[\u0300-\u036f-/,]/g, ""); //Expresion regular
     // Quitar los espacios en blanco
-    //texto = texto.replace(/\s+/g, ""); //Expresion regular
+    texto = texto.replace(/\s+/g, ""); //Expresion regular
     // Convertir el texto a minúsculas
     texto = texto.toLowerCase();
 
@@ -22,10 +22,12 @@ function esPalindromo(string) {
          resultado1 += texto[i];
          resultado2 += texto[longitud - i];
          if(resultado1 != resultado2){
+            console.log('todo mal');
             return false;
          }
    }
    if(resultado1 == resultado2){
+      console.log('todo bien');
       return true;
    }
 }
