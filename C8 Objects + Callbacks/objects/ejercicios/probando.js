@@ -11,7 +11,7 @@ console.log(numbers);
 /*************************************
  * 
  * Los objectos pueden ser 
- * ordenados por el valor de una de sus propiedades.
+ * ordenados por el valor de "una" de sus propiedades.
  */
 
 const items = [
@@ -22,16 +22,16 @@ const items = [
     { name: "Magnetic", value: 13 },
     { name: "Zeros", value: 37 },
   ];
-  // Esto ordena todo el Vector, osea que recorre todo
+  // Esto ordena todo el Vector
   // Yo solo tengo que pasarle las expresiones correctas
   //nota: puede dar resultados inconsistentes
   items.sort(function (a, b) {
     if (a.name > b.name) {
-      return 1; //a es menor que b según criterio de ordenamiento
+      return 1; //a es mayor que b según criterio de ordenamiento
     }
     if (a.name < b.name) {
-      return -1; //a es mayor que b según criterio de ordenamiento
-    }
-    // a deben ser iguales b
-    return 0;
+      return -1;    //a es menor que b según criterio de ordenamiento
+    }else{
+      return 0;      // a deben ser iguales b
+    }              
   });
