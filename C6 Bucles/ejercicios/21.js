@@ -4,19 +4,11 @@ function esPotenciaDeDos(numero) {
   // Devuelve true si lo es, sino devuelve false.
   // PISTA: Utiliza un bucle while.
   // Tu código:
-  if(numero == 1){
-    return true;
-  }else if(numero <= 0){
-    return false
-  }
-  let aux = 1;
-  let i = 1;
+  let aux = 2;
   while(aux <= numero){
-    if(aux == numero){
-      return true;
-    }else{
-      aux = aux * 2;
-    }
+    if(aux === numero) return true;
+    aux = aux * 2;
+    
   }
   return false;
 }

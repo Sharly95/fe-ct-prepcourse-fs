@@ -5,7 +5,7 @@ function agregarNumeros(arrayOfNums) {
   if(arrayOfNums == []){
     return 0;
   }
-  //nota: como tengo que recorrer todos obligatoriamente, puedo usar un foreach
+  //nota: como tengo que recorrer todos, puedo usar un foreach
   let suma = 0;
   arrayOfNums.forEach(element => {
       suma += element;

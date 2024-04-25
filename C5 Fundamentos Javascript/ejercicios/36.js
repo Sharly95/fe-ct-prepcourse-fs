@@ -6,4 +6,4 @@ function elevar(num, exponent) {
   return Math.pow(num, exponent);
 }
 
-module.exports = elevar(2, 8);
+module.exports = elevar;

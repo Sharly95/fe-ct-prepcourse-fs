@@ -53,12 +53,25 @@ function sortArray(arrayOfStrings) {
 
 function buscoInterseccion(array1, array2) {
   // Recibes dos arreglos de números.
-  // Debes retornar un nuevo arreglo en el que se guarden los elementos en común entre ambos arreglos.
+  // Debes retornar un nuevo a  rreglo en el que se guarden los elementos en común entre ambos arreglos.
   // [EJEMPLO]: [4,2,3] U [1,3,4] = [3,4].
   // Si no tienen elementos en común, retornar un arreglo vacío.
   // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
   // Tu código:
+
+  // doble FOR o puede con includes
+  let min = Math.min(array1.length, array2.length);
+  console.log(min);  
+  let r = []
+  array1.forEach(element => {
+      if(array2.includes(element)){
+        if(!r.includes(element))
+            r.push(element);
+      }
+  });
+  console.log(r)
 }
+console.log(buscoInterseccion([4,2,3],[1,3,4]));
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {

@@ -4,11 +4,14 @@ function esVocal(letra) {
   // Si no es vocal, tambien debe retornar "Dato incorrecto".
   // Tu código:
   var dato = letra.toLowerCase();
+  if(letra.length > 1){
+    return 'Dato incorrecto'
+  }
   if( dato == 'a' || dato == 'e' || dato == 'i' || dato == 'o' || dato == 'u'){
     return 'Es vocal';
   }else{
-    return 'No es vocal';
+    return 'Dato incorrecto';
   }
 }
 
-module.exports = esVocal('a');
+module.exports = esVocal;

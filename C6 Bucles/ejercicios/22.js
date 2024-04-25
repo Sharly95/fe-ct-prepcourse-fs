@@ -6,23 +6,18 @@
    // combine("abc", "12345", "") == "a1b2c345"
    // combine("abc", "12345", "67") == "a16b27c345"
 
-function combine(str1, str2, str3) {
-   //****************************************************************** */
-   //Con Math.max, Obtenemos! el valor del string que tiene mayor caracteres.
-   var resultado = '';
-   var limite = Math.max(str1.length, str2.length, str3.length);
-
-   for (let i = 0; i < limite; i++) {
-      if(i <= (str1.length) - 1){
-         resultado += str1[i];
-      }
-      if(i <= (str2.length) - 1){
-         resultado += str2[i];
-      }
-      if(i <= (str3.length) - 1){
-         resultado += str3[i];
-      }
-   }
-   return resultado;
-}
+   function combine(str1, str2, str3) {
+      let r='';
+      let long = Math.max(str1.length,str2.length,str3.length);
+     for(let i=0; i < long; i++){
+          if(str1[i] !== undefined) r += str1[i];
+          
+          if(str2[i] !== undefined) r += str2[i];
+          
+          if(str3[i] !== undefined) r += str3[i];
+          
+     }
+     return r;
+  }
+  
 module.exports = combine;

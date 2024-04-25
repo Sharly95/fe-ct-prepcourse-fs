@@ -5,4 +5,4 @@ function agregarSimboloExclamacion(str) {
   return str + '!';
 }
 
-module.exports = agregarSimboloExclamacion('Hello World');
+module.exports = agregarSimboloExclamacion;

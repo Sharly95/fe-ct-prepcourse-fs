@@ -3,7 +3,7 @@
 function elevarAlCuadrado(num) {
   // Retorna el valor de "num" elevado al cuadrado.
   // Tu código:
-  return 'El numero al cuadraro es : ' + Math.pow(num, 2); 
+  return Math.pow(num, 2); 
 }
 
-module.exports = elevarAlCuadrado(1);
+module.exports = elevarAlCuadrado;

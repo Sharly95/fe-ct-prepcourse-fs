@@ -6,4 +6,4 @@ function numeroRandom() {
   return Math.random();
 }
 
-module.exports = numeroRandom();
+module.exports = numeroRandom;

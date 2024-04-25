@@ -11,8 +11,4 @@ function esPalindromo(string) {
     }
     return true;
 }
-
-module.exports = esPalindromo;
-
-
-
+console.log(esPalindromo('radar'));

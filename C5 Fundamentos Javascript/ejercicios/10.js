@@ -4,24 +4,21 @@
   // Tu código:
 
 
-
+  // FECHA ES UN OBJETO!!"!!!!!"
 function esFechaValida(fecha) {
-  if(fecha == '' || fecha == ' ' || fecha == null){
-    return false;
-  }
 
-  let partes = (fecha).split('-');
 
-    if((partes[0] >= '01' && partes[0] <= 31 )&&
-      (partes[1] >= '01' && partes[1] <= 12 )&&
-      (partes[2] >= '1900' && partes[2] <= 9999 )){
-        return true;
-    }
+// Si se pasa por parametro eso
+if(fecha == "Invalid Date") return false
 
-    return null;
+// Comprobamos si es una fecha valida
+// instanceof, si fecha es instancia de Date
+if( fecha instanceof Date ) return true
+else return false
+
+
+
 }
 
-module.exports = esFechaValida('3-09-1995');
 
-
-
+module.exports = esFechaValida;

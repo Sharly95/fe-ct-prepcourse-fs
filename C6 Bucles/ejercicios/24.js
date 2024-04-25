@@ -3,7 +3,7 @@ function invertirTexto(texto) {
    // Tu objetivo es invertir el string y devolver el string invertido.
    // Tu código:
    var res = '';
-   var long = Math.max((texto.length) - 1);
+   var long = texto.length-1;
    while(long >= 0){
       res += texto[long];
       long --;

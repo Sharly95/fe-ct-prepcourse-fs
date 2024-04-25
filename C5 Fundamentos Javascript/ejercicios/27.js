@@ -5,4 +5,4 @@ function combinarNombres(nombre, apellido) {
   return (nombre + ' ' + apellido);
 }
 
-module.exports = combinarNombres('Soy', 'Henry');
+module.exports = combinarNombres;

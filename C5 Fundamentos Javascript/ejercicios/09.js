@@ -11,4 +11,4 @@ function esNuloOIndefinido(valor) {
 
 }
 
-module.exports = esNuloOIndefinido(null);
+module.exports = esNuloOIndefinido;
